@@ -23,6 +23,9 @@ levelupRoleMessages:
     - "Eyy :user, je bent net een level omhoog gegaan! Je bent nu **Level :level**, hier heb je de **:role** rol, je verdient het."
     - "Gefeliciteerd :user 🎉 Je bent net een level omhoog gegaan! Je bent nu **Level :level**, ook heb je de **:role** rol verdient"
 
+pagination:
+    simpleFooter: "Page **{0}** out of **{1}** pages.\n`{2} [page]`"
+
 administration:
     common:
         invalidRole: ":user Ongeldige rol, ik kon geen rol vinden die **:role** heet"
@@ -676,6 +679,15 @@ utility:
         eastereggs:
             quickMaths: '	-	Quick maths!'
             binary: "Er zijn maar 10 soorten mensen in de wereld, de mensen die binair kennen en de mensen die geen binair kennen."
+
+    ChangelogCommand:
+        invalidChangelogChannel: "Invalid changelog channel defined, the text channel could not be found!"
+        cantReadChangelogChannel: "I don't have permission to read the message history for the defined changelog channel, this is required in oder to read, load, and display the changelog messages."
+        invalidVersionGiven: "Invalid version given, `{0}` is not a valid version entry."
+        noChangelogMessages: "There are no changelog messages to display yet, try check back again later."
+        latestVersion: "Latest version: {0}"
+        lastFewVersions: "Last 10 Versions"
+        changelogVersions: "Changelog Versions ({0})"
 
     ChannelIdCommand:
         message: ':user :id: van het :channel kanaal is `:targetChannel`'
