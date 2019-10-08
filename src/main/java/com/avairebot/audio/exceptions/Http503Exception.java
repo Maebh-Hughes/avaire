@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018.
+ * Copyright (c) 2019.
  *
  * This file is part of AvaIre.
  *
@@ -19,14 +19,15 @@
  *
  */
 
-package com.avairebot.exceptions;
+package com.avairebot.audio.exceptions;
 
-import com.avairebot.audio.TrackRequestContext;
-import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
+public class Http503Exception extends SearchingException {
 
-public class NoMatchFoundException extends FriendlyException {
+    public Http503Exception(String message) {
+        super(message);
+    }
 
-    public NoMatchFoundException(String message, TrackRequestContext requestContext) {
-        super(String.format(message, requestContext.getQuery()), Severity.COMMON, null);
+    public Http503Exception(String message, Exception cause) {
+        super(message, cause);
     }
 }
